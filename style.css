@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(221, 136, 136);
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(80, 33, 33);
+}
+
+/* Estilização do título */
+.container-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+    width: 50%;
+    height: 60px;
+    font-size: 25px;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Container do mosaico */
+.container-mosaico {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    gap: 20px;
+    max-width: 800px;
+    height: auto;
+    border: 2px solid black;
+    padding: 10px;
+    transition: 0.5s ease-out;
+}
+
+.container-mosaico img {
+    width: 300px; 
+    max-width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+}
+
+
+
+.container-mosaico img:hover {
+    transform: scale(1.1);
+}

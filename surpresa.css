@@ -1,0 +1,98 @@
+    h1{
+        font-size: larger;
+       background-color:rgb(255, 255, 255);
+       border-radius: 0dvh, color black;
+     }
+
+        .carrossel-container {
+            position: relative;
+            width: 90%;
+            max-width: 500px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border: 5px solid rgb(0, 0, 0);
+        }
+        
+        .carrossel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .carrossel-img {
+            width: 100%;
+            flex-shrink: 0;
+            max-height: 600px;
+            object-fit: cover;
+        }
+        
+        .carrossel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+            border-radius: 50%;
+        }
+        
+        .carrossel-btn.prev {
+            left: 10px;
+        }
+        
+        .carrossel-btn.next {
+            right: 10px;
+        }
+        body{ background-color: rgb(221, 136, 136);}
+        .frase-amor {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #000000; /* tom roxo elegante */
+            border-left: 4px solid #ff69b4; /* rosa para dar charme */
+            padding-left: 15px;
+            margin: 30px auto;
+            max-width: 600px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+          }
+          
+          .frase-amor footer {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #111111;
+          }
+          .botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centraliza verticalmente em tela cheia */
+    position: relative;
+    z-index: 2; /* Para não ficar atrás do particles.js */
+}
+
+.botao-link {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #ffb6c1;
+    color: white;
+    font-size: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff69b4;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: sans-serif;
+}
+
+.botao-link:hover {
+    background-color: #ff69b4;
+    transform: scale(1.05);
+}
+
+   

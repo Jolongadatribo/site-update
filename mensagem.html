@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva para 4 Anos</title>
+    <link rel="stylesheet" href="mensagem.css">
+    <link rel="shortcut icon" href="imagens/xt100.jpg" type="image/x-icon">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contagem Regressiva <span class="coracao">❤️</span></h1>
+        <div class="subtitulo">Para nossos 4 anos de namoro</div>
+        
+        <div class="relogio">
+            <div class="tempo-item">
+                <div class="tempo-valor" id="dias-restantes">0</div>
+                <div class="tempo-label">Dias</div>
+            </div>
+            <div class="tempo-item">
+                <div class="tempo-valor" id="horas-restantes">0</div>
+                <div class="tempo-label">Horas</div>
+            </div>
+            <div class="tempo-item">
+                <div class="tempo-valor" id="minutos-restantes">0</div>
+                <div class="tempo-label">Minutos</div>
+            </div>
+            <div class="tempo-item">
+                <div class="tempo-valor" id="segundos-restantes">0</div>
+                <div class="tempo-label">Segundos</div>
+            </div>
+        </div>
+        
+        <div class="mensagem">
+            Faltam <span class="destaque" id="contagem-completa"></span> para completarmos<br>
+            <span class="destaque">4 anos de namoro</span> no dia <span class="destaque">23/07/2025</span> <span class="coracao">❤️</span>
+        </div>
+    </div>
+
+    <script>
+        // Data do aniversário de 4 anos (23/07/2025)
+        const dataAniversario4Anos = new Date('2025-07-23T00:00:00');
+        
+        function atualizarContagemRegressiva() {
+            const agora = new Date();
+            const diferenca = dataAniversario4Anos - agora;
+            
+            // Calcula o tempo restante
+            const segundosTotal = Math.floor(diferenca / 1000);
+            const minutosTotal = Math.floor(segundosTotal / 60);
+            const horasTotal = Math.floor(minutosTotal / 60);
+            const diasTotal = Math.floor(horasTotal / 24);
+            
+            // Calcula os valores para exibição
+            const dias = diasTotal;
+            const horas = horasTotal % 24;
+            const minutos = minutosTotal % 60;
+            const segundos = segundosTotal % 60;
+            
+            // Atualiza a exibição
+            document.getElementById('dias-restantes').textContent = dias;
+            document.getElementById('horas-restantes').textContent = horas;
+            document.getElementById('minutos-restantes').textContent = minutos;
+            document.getElementById('segundos-restantes').textContent = segundos;
+            
+            // Atualiza a mensagem completa
+            const mensagemCompleta = `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+            document.getElementById('contagem-completa').textContent = mensagemCompleta;
+        }
+        
+        // Atualiza a cada segundo
+        setInterval(atualizarContagemRegressiva, 1000);
+        atualizarContagemRegressiva(); // Chama imediatamente para evitar delay inicial
+    </script>
+</body>
+</html>

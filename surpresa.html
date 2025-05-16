@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momento Eterno &#x1F48C</title>
+  <link rel="shortcut icon" href="imagens/Primeira foto!.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="surpresa.css">
+</head>
+<body>
+
+<h1>Olá, meu amor só quero dizer que sou muito feliz do seu lado vida onde tudo começou numa rua que marcou agente, foram muitas coisa que já passamos juntos e eu agradeço muito mesmo pois, sem voçê não me vejo maais não e a cada minuto só penso em como poder dar a melhor condição para podemos viver juntinhos &#x1F496, no "meio" da rua nosso primeiro beijo&#x1F618 todo envergonhado mais ali foi o desbloqueio para tudo até aonde já chegamos e aonde vamos chegar ainda, eu só tenho a agradecer a cada momento que tivemos minha princesa&#x1F478. <h1>
+    
+ <h2
+  <div class="carrossel-container">
+    <button class="carrossel-btn prev">&#10094;</button>
+    <div class="carrossel">
+      <img src="imagens/Deusa.jpg" class="carrossel-img" alt="Foto 1">
+      <img src="imagens/diva.jpg" class="carrossel-img" alt="Foto 2">
+      <img src="imagens/Divissima.jpg" class="carrossel-img" alt="Foto 3">
+      <img src="imagens/espelho feliz.jpg" class="carrossel-img" alt="Foto 4">
+      <img src="imagens/menina feliz.jpg" class="carrossel-img" alt="Foto 5">
+      <img src="imagens/momo.jpg" class="carrossel-img" alt="Foto 6">
+      <img src="imagens/mor 2.jpg" class="carrossel-img" alt="Foto 7">
+      <img src="imagens/mor 3.jpg" class="carrossel-img" alt="Foto 8">
+      <img src="imagens/mor 4.jpg" class="carrossel-img" alt="Foto 9">
+      <img src="imagens/mor 5.jpg" class="carrossel-img" alt="Foto 10">
+      <img src="imagens/mor 6.jpg" class="carrossel-img" alt="Foto 11">
+      <img src="imagens/lidaadms.jpg" class="carrossel-img" alt="Foto 12">
+      <img src="imagens/zueira.jpg" class="carrossel-img" alt="Foto 13">
+      <img src="imagens/careta.jpg" class="carrossel-img" alt="Foto 14">
+      <img src="imagens/lindaa (1).jpg" class="carrossel-img" alt="Foto 15">
+      <img src="imagens/pose.jpg" class="carrossel-img" alt="Foto 16">
+      <img src="imagens/posezinha.jpg" class="carrossel-img" alt="Foto 17">
+      <img src="imagens/xt100.jpg" class="carrossel-img" alt="Foto 18">
+      <img src="imagens/xt100good.jpg" class="carrossel-img" alt="Foto 19">
+
+    </div>
+    <button class="carrossel-btn next">&#10095;</button>
+  </div></h2>
+
+  <script>
+    const carrossel = document.querySelector('.carrossel');
+    const imagens = document.querySelectorAll('.carrossel-img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    let index = 0;
+  
+    function updateCarrossel() {
+      const width = imagens[0].clientWidth;
+      carrossel.style.transform = `translateX(-${index * width}px)`;
+    }
+  
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % imagens.length;
+      updateCarrossel();
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + imagens.length) % imagens.length;
+      updateCarrossel();
+    });
+  
+    window.addEventListener('resize', updateCarrossel);
+  </script></h2>
+  <blockquote class="frase-amor">
+    <p>"O amor é algo eterno; o aspecto pode mudar, mas não a essência."</p>
+    <footer>— Vincent van Gogh</footer>
+  </blockquote>
+  
+  
+</body>
+</html>
